@@ -1,17 +1,17 @@
 package nl.kuijp.horizoncontrol;
 
-public class VncSender {
+public class KeySender {
 
    private String vncHost;
    private int vncPort;
 
-   public VncSender(String vncHost, int vncPort) {
+   public KeySender(String vncHost, int vncPort) {
       this.vncHost = vncHost;
       this.vncPort = vncPort;
    }
 
    public void sendKey(final Integer key) throws Exception {
-      try(VncSenderConnection con = new VncSenderConnection(vncHost, vncPort)) {
+      try(HorizonConnection con = new HorizonConnection(vncHost, vncPort)) {
          con.sendKey(key);
       }
    }

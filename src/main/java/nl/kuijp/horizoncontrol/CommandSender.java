@@ -22,7 +22,7 @@ public class CommandSender {
         String vncHost = cmdLine.getOptionValue("h");
         Integer vncPort = Integer.parseInt(cmdLine.getOptionValue("p"));
 
-        VncSender vncSender = new VncSender(vncHost, vncPort);
+        KeySender vncSender = new KeySender(vncHost, vncPort);
         vncSender.sendKey(Keys.getByName(vncKey));
     }
 

@@ -3,11 +3,11 @@ package nl.kuijp.horizoncontrol;
 import java.io.Closeable;
 import java.io.IOException;
 
-class VncSenderConnection implements Closeable {
+class HorizonConnection implements Closeable {
 
    private RfbProto rfb;
 
-   VncSenderConnection(String host, int port) throws Exception {
+   HorizonConnection(String host, int port) throws Exception {
       rfb = new RfbProto(host, port);
    }
 
