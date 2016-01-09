@@ -3,9 +3,6 @@ package nl.kuijp.horizoncontrol;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by jurgen on 02-12-15.
- */
 public class Keys {
 
     public static final int KEY_POWER = 0xe000;
